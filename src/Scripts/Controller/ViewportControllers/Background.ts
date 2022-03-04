@@ -37,7 +37,7 @@ export class Background {
         );
         let bgNebula = new PIXI.Container();
         bgNebula.filterArea = App.instance.pixi.screen;
-        bgNebula.filters = [this.nebulaFilter, new PixelateFilter(15)];
+        //bgNebula.filters = [this.nebulaFilter, new PixelateFilter(15)];
         this.viewport.addChild(bgNebula);
     }
 
@@ -49,7 +49,7 @@ export class Background {
         );
         let bgStar = new PIXI.Container();
         bgStar.filterArea = App.instance.pixi.screen;
-        bgStar.filters = [this.starsFilter, new PixelateFilter(5)];
+        bgStar.filters = [this.starsFilter/*, new PixelateFilter(5)*/];
         this.viewport.addChild(bgStar);
     }
 
