@@ -2,7 +2,6 @@
   "name": "Engine",
   "version": "1.0.0",
   "description": "Simple Galaxy with Pixi.js",
-  "main": "src/index.html",
   "scripts": {
     "dev": "npm run clean && parcel --no-cache src/index.html",
     "clean": "rimraf ./dist ./.cache"
@@ -17,6 +16,8 @@
     "pixi.js": "^6.0.2"
   },
   "devDependencies": {
-    "@parcel/transformer-glsl": "^2.0.0-beta.2"
+    "@parcel/transformer-glsl": "^2.0.0-beta.2",
+    "querystring-es3": "^0.2.1",
+    "rimraf": "^3.0.2"
   }
 }
